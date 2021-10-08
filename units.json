@@ -1,0 +1,79 @@
+[
+    {
+        "type": "length",
+        "unitsSI": [
+            {"name": "km", "conversionFactor": 1e3, "alternate": ["kilometre", "kilometer", "kilometres", "kilometers"], "target": true},
+            {"name": "m", "conversionFactor": 1, "alternate": ["metre", "meter", "metres", "meters"], "target": true},
+            {"name": "dm", "conversionFactor": 0.1, "alternate": ["decimetre", "decimeter", "decimetres", "decimeters"], "target": false},
+            {"name": "cm", "conversionFactor": 1e-2, "alternate": ["centimetre", "centimeter", "centimetres", "centimeters"], "target": true},
+            {"name": "mm", "conversionFactor": 1e-3, "alternate": ["millimetre", "millimeter", "millimetres", "millimeters"], "target": true},
+            {"name": "nm", "conversionFactor": 1e-9, "alternate": ["nanometre", "nanometer", "nanometres", "nanometers"], "target": true}
+        ],
+        "unitsImperial": [
+            {"name": "thou", "conversionFactor": 2.54e-5, "alternate": ["mil"], "target": true},
+            {"name": "in", "conversionFactor": 0.0254, "alternate": ["inch", "inches"], "target": true},
+            {"name": "ft", "conversionFactor": 0.3048, "alternate": ["foot", "feet"], "target": true},
+            {"name": "yd", "conversionFactor": 0.9144, "alternate": ["yard", "yards"], "target": true},
+            {"name": "mi", "conversionFactor": 1609.344, "alternate": ["mile", "miles"], "target": true},
+            {"name": "leagues", "conversionFactor": 4828.03, "alternate": ["league"], "target": false},
+            {"name": "smoots", "conversionFactor": 1.7018, "alternate": ["smoot"], "target": false},
+            {"name": "altuve", "conversionFactor": 1.65, "alternate": ["altuves"], "target": false},
+            {"name": "sheppey", "conversionFactor": 1408.176, "alternate": ["sheppies", "sheppeys"], "target": false},
+            {"name": "wiffle", "conversionFactor": 0.089, "alternate": ["wiffles"], "target": false}
+        ],
+        "unitsSilly": [
+            {
+                "name": "Ford F-150 Custom Fit Front FloorLiners",
+                "conversionFactor": 1.089914
+            },
+            {
+                "name": "Samsung Side by Side; Fingerprint Resistant Stainless Steel Refrigerators",
+                "conversionFactor": 1.736852
+            },
+            {
+                "name": "Zulay Premium Quality Metal Lemon Squeezers",
+                "conversionFactor": 0.22098
+            },
+            {
+                "name": "Logitech K350 Wireless Keyboards",
+                "conversionFactor": 0.5
+            },
+            {
+                "name": "Wooden Rice Paddle Versatile Serving Spoons",
+                "conversionFactor": 0.2286
+            },
+            {
+                "name": "Standard Diatonic Key of C, Blues Silver grey Harmonicas",
+                "conversionFactor": 0.101854
+            }
+        ]
+    },
+    {
+        "type": "mass",
+        "unitsSI": [
+            {"name": "kg", "conversionFactor": 1e3, "alternate": ["kilogram", "kilograms"], "target": true},
+            {"name": "g", "conversionFactor": 1, "alternate": ["gram", "grams"], "target": true},
+            {"name": "mg", "conversionFactor": 1e-3, "alternate": ["milligram", "milligrams"], "target": true}
+        ],
+        "unitsImperial": [
+            {"name": "st", "conversionFactor": 6350.293, "alternate": ["stone", "stones"], "target": true},
+            {"name": "lb", "conversionFactor": 453.592, "alternate": ["pound", "pounds"], "target": true},
+            {"name": "oz", "conversionFactor": 28.3495, "alternate": ["ounce", "ounces"], "target": true}
+        ]
+    },
+    {
+        "type": "volume",
+        "unitsSI": [
+            {"name": "kL", "conversionFactor": 1e6, "alternate": ["kiloliter", "kiloliters", "kilolitre", "kilolitres"], "target": false},
+            {"name": "L", "conversionFactor": 1e3, "alternate": ["liter", "liters", "litre", "litres"], "target": true},
+            {"name": "mL", "conversionFactor": 1, "alternate": ["millilitre", "millilitres", "milliliter", "milliliters"], "target": true}
+        ],
+        "unitsImperial": [
+            {"name": "fl oz", "conversionFactor": 28.4130625, "alternate": ["fluid ounce", "fluid ounces"], "target": true},
+            {"name": "gi", "conversionFactor": 142.0653125, "alternate": ["gill", "gills"], "target": false},
+            {"name": "pi", "conversionFactor": 568.26125, "alternate": ["pint", "pints"], "target": true},
+            {"name": "qt", "conversionFactor": 1136.5225, "alternate": ["quart", "quarts"], "target": true},
+            {"name": "gal", "conversionFactor": 4546.09, "alternate": ["gallon", "gallons"], "target": true}
+        ]
+    }
+]
