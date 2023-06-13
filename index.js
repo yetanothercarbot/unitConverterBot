@@ -1,19 +1,38 @@
 "use strict"
 
-// Require the necessary discord.js classes
-const { Client, Intents } = require('discord.js');
+const fs = require('node:fs');
+const path = require('node:path');
+
+const { Client, Collection, Events, GatewayIntentBits  } = require('discord.js');
+const storage = require('./storage.js');
 const { token } = require('./config.json');
 const units = require('./units.json');
 
 // Create a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
+
+/* Run command */
+client.on(Events.InteractionCreate, async interaction => {
+	if (!interaction.isChatInputCommand()) return;
+    console.log(interaction)
+
+	if (interaction.commandName == "convert") {
+        var response = storage.retrieve(interaction.guildId, interaction.channelId);
+        if (response) {
+            interaction.reply({content: response});
+        } else {
+            interaction.reply({content: "No recent unit conversions.", ephemeral: true})
+        }
+    }
+});
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('messageCreate', (message) => {
+client.on(Events.MessageCreate , (message) => {
+    console.log(JSON.stringify(message))
     var conversions = []
     if (!message.author.bot) {
         // Regex: '[0-9]+\s*' plus unit plus '\b'.
@@ -23,7 +42,7 @@ client.on('messageCreate', (message) => {
         });
     }
     if (conversions.length != 0) {
-        message.reply(conversions.join("\n"));
+        storage.set(message.guildId, message.channelId, conversions.join("\n"));
     }
 })
 

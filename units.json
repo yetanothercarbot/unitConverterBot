@@ -20,32 +20,6 @@
             {"name": "altuve", "conversionFactor": 1.65, "alternate": ["altuves"], "target": false},
             {"name": "sheppey", "conversionFactor": 1408.176, "alternate": ["sheppies", "sheppeys"], "target": false},
             {"name": "wiffle", "conversionFactor": 0.089, "alternate": ["wiffles"], "target": false}
-        ],
-        "unitsSilly": [
-            {
-                "name": "Ford F-150 Custom Fit Front FloorLiners",
-                "conversionFactor": 1.089914
-            },
-            {
-                "name": "Samsung Side by Side; Fingerprint Resistant Stainless Steel Refrigerators",
-                "conversionFactor": 1.736852
-            },
-            {
-                "name": "Zulay Premium Quality Metal Lemon Squeezers",
-                "conversionFactor": 0.22098
-            },
-            {
-                "name": "Logitech K350 Wireless Keyboards",
-                "conversionFactor": 0.5
-            },
-            {
-                "name": "Wooden Rice Paddle Versatile Serving Spoons",
-                "conversionFactor": 0.2286
-            },
-            {
-                "name": "Standard Diatonic Key of C, Blues Silver grey Harmonicas",
-                "conversionFactor": 0.101854
-            }
         ]
     },
     {
@@ -56,7 +30,7 @@
             {"name": "mg", "conversionFactor": 1e-3, "alternate": ["milligram", "milligrams"], "target": true}
         ],
         "unitsImperial": [
-            {"name": "st", "conversionFactor": 6350.293, "alternate": ["stone", "stones"], "target": true},
+            {"name": "st", "conversionFactor": 6350.293, "alternate": ["stone", "stones"], "target": false},
             {"name": "lb", "conversionFactor": 453.592, "alternate": ["pound", "pounds"], "target": true},
             {"name": "oz", "conversionFactor": 28.3495, "alternate": ["ounce", "ounces"], "target": true}
         ]
