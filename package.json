@@ -11,5 +11,8 @@
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "discord.js": "^14.11.0"
+  },
+  "volta": {
+    "node": "18.16.0"
   }
 }
